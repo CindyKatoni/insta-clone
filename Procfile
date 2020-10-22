@@ -1,1 +1,1 @@
-web: gunicorn manage:InstaClone
+web: gunicorn manage:InstaClone.wsgi
