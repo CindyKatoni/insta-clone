@@ -1,8 +1,43 @@
 {% extends 'instagram/base.html' %}
 {% block content %}
-    {% for profile in profiles %}
+{% for profile in profiles %}
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+        <div class="profile_image">
+
+        </div>
+        <div class="post_info">
+            <div class="post_name"><p>{{profile.author}}</p></div>
+            <div class="post_location">Seattle</div>
+        </div>
+        <div class="post_options"><i class="fa fa-ellipsis-h"></i></div>
+    </div>
+
+    <div class="image">
+        <img src="instagramapp/static/images/diani.jpeg" class="card-img-top" alt="...">
+    </div>
+    
+    <div class="engagement">
+        <a href = "#"><i class="fa fa-comment"></i></a>
+    </div>
+
+    <div class="likes">
+        <a href="">12</a>
+    </div>
+    <div class="card-body">
+        
+        <!-- <p class="card-text"></p> -->
+    </div>
+
+
+
+</div>
+
+
+<!-- {% for profile in profiles %}
         <p>{{ profile.author }}</p>
-    {% endfor %}
+    {% endfor %} -->
+{% endfor %}    
 {% endblock %}
 
 
