@@ -1,1 +1,1 @@
-web: gunicorn manage:instagramapp
+web: gunicorn manage:InstaClone
