@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'instagramapp',
-    'whitenoise.runserver_nostatic'
+    'whitenoise.runserver_nostatic',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -76,6 +77,14 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'InstaClone.wsgi.application'
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dagiopszz',
+    'API_KEY': '252159239835859',
+    'API_SECRET': 'oR0cGMx6KjfOT0hk7eOIffu804k',
+}
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Database
