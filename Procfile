@@ -1,1 +1,1 @@
-web: gunicorn manage:Mysite --preload
+web: gunicorn Mysite --preload
