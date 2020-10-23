@@ -1,1 +1,1 @@
-web: gunicorn manage:InstaClone.wsgi --preload
+web: gunicorn manage:Mysite --preload
