@@ -1,1 +1,1 @@
-web: gunicorn Mysite --preload
+web: gunicorn InstaClone.wsgi --log-file -
